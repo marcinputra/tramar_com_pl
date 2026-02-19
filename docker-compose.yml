@@ -1,0 +1,18 @@
+services:
+  tramar_com_pl:
+    container_name: tramar_com_pl
+    build:
+      context: ./
+    restart: always
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.tramar.rule=Host(`tramar.dwojka.net`)"
+      - "traefik.http.routers.tramar.entrypoints=websecure"
+      - "traefik.http.routers.tramar.tls.certresolver=letsencrypt"
+      - "traefik.http.services.tramar.loadbalancer.server.port=80"
+    networks:
+      - traefik-net
+
+networks:
+  traefik-net:
+    external: true
