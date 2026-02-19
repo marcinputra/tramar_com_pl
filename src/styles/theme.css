@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* Rail Tech Theme: grafit + rail-blue + signal-yellow */
+@layer base {
+  :root {
+    --rail-blue: 191 50% 21%;   /* ~ #1b4852 */
+    --graphite: 222 10% 13%;    /* ~ #1C1F24 */
+    --signal: 191 50% 21%;     /* ~ #1b4852 */       
+
+    --paper: 0 0% 100%;
+    --soft: 210 20% 98%;
+    --border: 220 13% 91%;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: hsl(var(--paper));
+    color: #1b4852; /* neutral-900 */
+  }
+}
+
+@layer utilities {
+  .bg-rail { background: hsl(var(--rail-blue)); }
+  .text-rail { color: hsl(var(--rail-blue)); }
+  .border-rail { border-color: hsl(var(--rail-blue)); }
+
+  .bg-graphite { background: hsl(var(--graphite)); }
+  .text-graphite { color: hsl(var(--graphite)); }
+
+  .bg-signal { background: hsl(var(--signal)); }
+  .text-signal { color: hsl(var(--signal)); }
+
+  .bg-soft { background: hsl(var(--soft)); }
+  .border-soft { border-color: hsl(var(--border)); }
+
+  .section-kicker {
+    color: rgba(17, 24, 39, 0.65);
+  }
+
+  .section-title {
+    color: #111827;
+  }
+}
