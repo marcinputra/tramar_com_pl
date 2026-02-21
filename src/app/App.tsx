@@ -8,7 +8,6 @@ import { Services } from "../components/sections/Services"
 import { Capabilities } from "../components/sections/Capabilities"
 import { Values } from "../components/sections/Values"
 import { CTA } from "../components/sections/CTA"
-import { Projects } from "../components/sections/Projects"
 
 export default function App() {
   return (
@@ -21,7 +20,6 @@ export default function App() {
         <Services services={tramar.services} />
         <Capabilities items={tramar.capabilities} />
         <Values values={tramar.values} />
-        <Projects />
         <CTA {...tramar.cta} />
       </main>
 

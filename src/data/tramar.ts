@@ -65,7 +65,7 @@ export const tramar = {
   ],
 
   cta: {
-    title: "Porozmawiajmy z nami o Twojej inwestycji",
+    title: "Porozmawiaj z nami o Twojej inwestycji",
     desc: "Skontaktuj się, aby omówić zakres prac, harmonogram i wymagania techniczne.",
     primary: "Kontakt",
     secondary: "Zakres usług",
